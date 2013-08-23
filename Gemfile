@@ -43,3 +43,7 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# APIs
+gem "httparty", "~> 0.11.0"
+gem "figaro", "~> 0.6.4"
