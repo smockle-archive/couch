@@ -1,6 +1,7 @@
 Couch::Application.routes.draw do
   get "instagram" => "instagram#index"
   get "instagram/index"
+  get "instagram/feed", constraints: { xhr?: true }
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
