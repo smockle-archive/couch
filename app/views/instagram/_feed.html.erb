@@ -1,6 +1,14 @@
 <% @photos.each do |i| %>
-  <div class="media">
-    <img class="media-image" src="<%= i %>">
-    <div class="media-caption">#aumcdive</div>
+  <div class="media
+              <% if i["tags"].include? "team1" %>media-one<% end %>
+              <% if i["tags"].include? "team2" %>media-two<% end %>
+              <% if i["tags"].include? "team3" %>media-three<% end %>
+              <% if i["tags"].include? "team4" %>media-four<% end %>">
+    <img class="media-image" src="<%= i["images"]["standard_resolution"]["url"] %>">
+    <div class="media-caption">
+      <% i["tags"].each do |t| %>
+        <% if t != "aumccollege" %><span> #<%= t %></span><% end %>
+      <% end %>
+    </div>
   </div>
 <% end %>

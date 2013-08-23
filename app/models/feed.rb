@@ -8,7 +8,7 @@ class Feed
       HTTParty.get("https://api.instagram.com/v1/tags/aumccollege/media/recent",
       :query => {
         :access_token => Figaro.env.INSTAGRAM_ACCESS_TOKEN
-      })["data"].each.map{|i| i["images"]["standard_resolution"]["url"]}
+      })["data"]
       # reject{|i| i["tags"].include? "p"}.first["images"]["standard_resolution"]["url"]
     end
   end
