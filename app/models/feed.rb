@@ -5,7 +5,7 @@ class Feed
   
   def self.instagram
     Rails.cache.fetch("instagram", :expires_in => 10.minutes) do
-      HTTParty.get("https://api.instagram.com/v1/users/self/media/recent",
+      HTTParty.get("https://api.instagram.com/v1/tags/aumccollege/media/recent",
       :query => {
         :access_token => Figaro.env.INSTAGRAM_ACCESS_TOKEN
       })["data"].each.map{|i| i["images"]["standard_resolution"]["url"]}
