@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby "2.0.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
@@ -43,6 +44,9 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Deployment
+gem "rails_12factor", "~> 0.0.2"
 
 # APIs
 gem "httparty", "~> 0.11.0"
