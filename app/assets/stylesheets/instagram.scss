@@ -62,3 +62,21 @@ body {
     width: 1200px;
   }
 }
+
+@media (min-width: 1500px) {
+  body {
+    width: 1500px;
+  }
+}
+
+@media (min-width: 1800px) {
+  body {
+    width: 1800px;
+  }
+}
+
+@media (min-width: 2100px) {
+  body {
+    width: 2100px;
+  }
+}
