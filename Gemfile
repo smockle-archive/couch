@@ -45,6 +45,10 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Caches
+gem "memcachier", "~> 0.0.2"
+gem "dalli", "~> 2.6.4"
+
 # Deployment
 gem "rails_12factor", "~> 0.0.2"
 
