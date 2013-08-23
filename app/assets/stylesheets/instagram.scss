@@ -54,12 +54,12 @@ h1 {
 }
 
 .media-caption {
-  bottom: 0;
+  bottom: 3px;
   font-size: 1.4rem;
   font-style: italic;
   font-weight: 100;
   position: absolute;
-  right: 0;
+  right: 3px;
 }
 
 .media-image {
@@ -82,6 +82,7 @@ h1 {
   }
   
   .media:nth-of-type(n) {
+    margin-bottom: 3px;
     margin-right: 1px;
   }
 }
