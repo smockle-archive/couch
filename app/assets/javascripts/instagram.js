@@ -8,7 +8,7 @@ COUCH = $.extend(typeof COUCH === "undefined" ? {} : COUCH, {
       $.ajax({
         url: "/instagram/feed",
         success: function(data) {
-           $("section#feeds").html(data);
+          $("section#feeds").html(data);
         }
       });
     }

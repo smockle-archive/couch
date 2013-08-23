@@ -46,6 +46,14 @@ h1 {
   color: $black;
 }
 
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -16px;
+  margin-top: -16px;
+}
+
 .media {
   box-sizing: border-box;
   display: inline-block;
