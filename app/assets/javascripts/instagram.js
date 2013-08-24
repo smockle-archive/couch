@@ -60,7 +60,7 @@ COUCH = $.extend(typeof COUCH === "undefined" ? {} : COUCH, {
             else if ($("#link-four").hasClass("menu-link--active")) linkFour();
           }
         });
-      }, 30000);
+      }, 45000);
       
       $("#link-all").on("click", linkAll);
       $("#link-one").on("click", linkOne);
