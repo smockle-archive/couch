@@ -4,7 +4,10 @@
 function linkAll() {
   $(".menu-link").removeClass("menu-link--active");
   $("#link-all").addClass("menu-link--active");
-  $(".media").show();
+  $(".media-one").show();
+  $(".media-two").show();
+  $(".media-three").show();
+  $(".media-four").show();
 }
 
 function linkOne() {

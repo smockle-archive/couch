@@ -56,9 +56,16 @@ h1 {
 
 .media {
   box-sizing: border-box;
-  display: inline-block;
+  display: none;
   position: relative;
   width: 100%;
+}
+
+.media-one,
+.media-two,
+.media-three,
+.media-four {
+  display: inline-block;
 }
 
 .media-caption {
