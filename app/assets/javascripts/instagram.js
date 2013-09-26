@@ -45,7 +45,7 @@ COUCH = $.extend(typeof COUCH === "undefined" ? {} : COUCH, {
       $.ajax({
         url: "/instagram/feed",
         success: function(data) {
-          $("section#feeds").html(data);
+          $("main#feeds").html(data);
         }
       });
       
@@ -55,7 +55,7 @@ COUCH = $.extend(typeof COUCH === "undefined" ? {} : COUCH, {
           url: "/instagram/feed",
           success: function(data) {
             console.log("Loaded images.");
-            $("section#feeds").html(data);
+            $("main#feeds").html(data);
             if ($("#link-all").hasClass("menu-link--active")) linkAll();
             else if ($("#link-one").hasClass("menu-link--active")) linkOne();
             else if ($("#link-two").hasClass("menu-link--active")) linkTwo();
@@ -70,6 +70,8 @@ COUCH = $.extend(typeof COUCH === "undefined" ? {} : COUCH, {
       $("#link-two").on("click", linkTwo);
       $("#link-three").on("click", linkThree);
       $("#link-four").on("click", linkFour);
+      
+      linkAll();
     }
   }
 });
